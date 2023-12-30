@@ -20,7 +20,7 @@ const WorkerEmailVerify = () => {
                     }
                 }
                 
-                const url = `http://localhost:8080/api/workers/verify`;
+                const url = `http://109.248.11.166:8080/api/workers/verify`;
 
                 const {data: res} = await axios.get(url, config);
                 console.log(res);

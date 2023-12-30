@@ -11,7 +11,7 @@ const useBrands = (defaultUsers = []) => {
     
     const featBrands = async (word, search) => {
         
-        const {data: res} = await axios.post('http://localhost:8080/charts/lineChart/find', {text: word, search: search, email: localStorage.getItem('email')});
+        const {data: res} = await axios.post('http://109.248.11.166:8080/charts/lineChart/find', {text: word, search: search, email: localStorage.getItem('email')});
 
         console.log(res)
 

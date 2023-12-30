@@ -220,7 +220,7 @@ const SelectTableComponent = ({ onSelect, data, handleEdit, searchQuery }) => {
                     </th>
                     <td>
                       <img
-                        src={`http://localhost:8080/${user.image}`}
+                        src={`http://109.248.11.166:8080/${user.image}`}
                         alt="icon-worker"
                       />
                       {user.name}

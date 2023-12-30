@@ -10,9 +10,9 @@ export default function OTPpage({formData, userId, generate, toggleClose}) {
 
 	async function submitOTP(code){
 		try{	
-			const {data: res} = await axios.get('http://localhost:8080/api/users/OTP/verify', {params: {id: userId, code: otp}});
+			const {data: res} = await axios.get('http://109.248.11.166:8080/api/users/OTP/verify', {params: {id: userId, code: otp}});
 
-            await axios.post('http://localhost:8080/api/users/login', formData);
+            await axios.post('http://109.248.11.166:8080/api/users/login', formData);
 
 
             // записываем jwt token  в локальное хранилище

@@ -24,7 +24,7 @@
               />
               <img
                 className="worker_checks-list_item-image"
-                src={"http://localhost:8080/" + item.image}
+                src={"http://109.248.11.166:8080/" + item.image}
                 alt="person_image"
               />
               <div className="worker_checks-list_item-info">

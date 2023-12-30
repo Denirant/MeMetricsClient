@@ -51,7 +51,7 @@ const CompanyInfo = () => {
   const getCompany = async () => {
     try {
       const { data: res } = await axios.get(
-        `http://localhost:8080/api/companies/`,
+        `http://109.248.11.166:8080/api/companies/`,
         { params: { id: params.id } }
       );
       setCompany(res.company);
@@ -62,7 +62,7 @@ const CompanyInfo = () => {
 
   const getWorkers = async () => {
     try {
-      const url = `http://localhost:8080/api/workers/list`;
+      const url = `http://109.248.11.166:8080/api/workers/list`;
       const { data: res } = await axios.get(url, {
         params: { id: localStorage.getItem("id") },
       });
@@ -243,7 +243,7 @@ const CompanyInfo = () => {
   async function handleDeleteSingle(idArg = params.id) {
     try {
       const { data: res } = await axios.delete(
-        `http://localhost:8080/api/companies/delete/`,
+        `http://109.248.11.166:8080/api/companies/delete/`,
         { params: { userId: localStorage.getItem("id"), companyId: idArg } }
       );
 

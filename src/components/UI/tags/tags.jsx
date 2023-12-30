@@ -13,7 +13,7 @@ const Tags = ({list}) => {
         event.preventDefault();
 
         try {
-            await axios.delete(`http://localhost:8080/product/${params.id}/tag/${event.currentTarget.parentNode.innerText}/remove`);
+            await axios.delete(`http://109.248.11.166:8080/product/${params.id}/tag/${event.currentTarget.parentNode.innerText}/remove`);
             window.location.reload();
         } catch (error) {
             console.log(error);

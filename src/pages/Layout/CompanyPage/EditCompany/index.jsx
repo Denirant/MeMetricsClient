@@ -52,7 +52,7 @@ const EditCompany = ({ handleClose, companyId, info }) => {
 
   const fileInput = useRef(null);
   const [imagePreview, setImagePreview] = useState(
-    "http://localhost:8080/" + company.url
+    "http://109.248.11.166:8080/" + company.url
   );
 
   const [fileImage, setFileImage] = useState(null);
@@ -71,7 +71,7 @@ const EditCompany = ({ handleClose, companyId, info }) => {
 
       // await uploadCompanyPhoto(selectedFile);
     } else {
-      setImagePreview("http://localhost:8080/" + company.url);
+      setImagePreview("http://109.248.11.166:8080/" + company.url);
     }
   };
 

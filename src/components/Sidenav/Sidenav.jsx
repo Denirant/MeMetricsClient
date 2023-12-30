@@ -32,7 +32,7 @@ export default function SideNavigation({activeNumber}) {
     useEffect(() => {
         const getCompanies = async() => {
             try{
-                const url = `http://localhost:8080/api/companies/list`;
+                const url = `http://109.248.11.166:8080/api/companies/list`;
                 const {data: res} = await axios.get(url, {params: {id: localStorage.getItem('id')}});
                 setCompanies(res.data);
             }catch(error){

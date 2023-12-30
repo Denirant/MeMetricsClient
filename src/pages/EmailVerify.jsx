@@ -20,7 +20,7 @@ const EmailVerify = () => {
                     }
                 }
                 
-                const url = `http://localhost:8080/api/users/verify`;
+                const url = `http://109.248.11.166:8080/api/users/verify`;
 
                 const {data: res} = await axios.get(url, config);
                 console.log(res);

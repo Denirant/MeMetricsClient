@@ -23,7 +23,7 @@ const ResetPassword = () => {
             token: params.token
         }
     }
-    const url = `http://localhost:8080/api/users/reset`
+    const url = `http://109.248.11.166:8080/api/users/reset`
     
     const navigate = useNavigate();
 

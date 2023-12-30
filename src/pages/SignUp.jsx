@@ -40,7 +40,7 @@ const Signup = ({handleClose, handleSwitch}) => {
         event.preventDefault();
         setError('')
         try{
-            const url = `http://localhost:8080/api/users/register`;
+            const url = `http://109.248.11.166:8080/api/users/register`;
             const {data: res} = await axios.post(url, data);
             setSuccess(res.message);
             setTimeout(() => {
